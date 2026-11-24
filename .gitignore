@@ -7,9 +7,9 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Redundant copies of the dataset (CSV is the canonical file)
-data/*.parquet
-data/visualization*.png
+# Local working notes and course instructions (not part of submission)
+CLAUDE.md
+uslovi*.txt
 
 # OS / editor
 .DS_Store
