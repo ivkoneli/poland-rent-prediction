@@ -1,32 +1,20 @@
-# Predviđanje vremena rešavanja prijava pacova u Njujorku
+# Predviđanje mesečne kirije stanova u gradovima Poljske
 
 Projekat iz predmeta veštačka inteligencija (I projekat).
 
 ## Problem
 
-Predviđanje broja dana potrebnih da gradska služba 311 u Njujorku reši (zatvori) prijavu pacova u siromašnim gradskim blokovima. Model koristi samo podatke poznate u trenutku podnošenja prijave: vreme prijave, lokaciju, deo grada, stopu siromaštva i udeo podstanara u bloku, kao i trenutno opterećenje službe.
+Predviđanje mesečne kirije (PLN) stana na osnovu njegovih karakteristika (kvadratura, broj soba, sprat, godina gradnje, opremljenost) i urbane okoline (grad, udaljenost od centra, broj i udaljenost obližnjih škola, ambulanti, restorana, apoteka...).
 
 - **Tip problema:** regresija
-- **Ciljna promenljiva:** `days_to_close`
-- **Jedan primer:** jedna prijava pacova službi 311
+- **Ciljna promenljiva:** `price` (mesečna kirija u PLN)
+- **Jedan primer:** jedan stan oglašen za izdavanje
 
 ## Podaci
 
-- **Izvor:** [Rat Complaints in High-Poverty Blocks (Kaggle)](https://www.kaggle.com/datasets/edkearth/rat-complaints-high-poverty)
-- **Autor:** EDK (edk.earth), na osnovu javnih 311 skupova podataka gradova SAD
-- **Licenca:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
-CSV fajl se nalazi u folderu `data/`. Projekat koristi samo prijave iz Njujorka (~22.600 redova).
-
-## Struktura
-
-```
-nyc-rat-complaints-ml/
-├── data/          # originalni skup podataka (Kaggle)
-├── notebooks/     # Jupyter notebook sa analizom i modelima
-├── requirements.txt
-└── README.md
-```
+- **Izvor:** [Apartment Prices in Poland (Kaggle)](https://www.kaggle.com/datasets/krzysztofjamroz/apartment-prices-in-poland), autor Krzysztof Jamroz
+- **Licenca:** Apache 2.0
+- Koriste se fajlovi sa oglasima za izdavanje (`data/apartments_rent_pl_*.csv`), mesečni snimci od novembra 2023. do juna 2024.
 
 ## Pokretanje
 
