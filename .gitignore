@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Redundant copies of the dataset (CSV is the canonical file)
+data/*.parquet
+data/visualization*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
